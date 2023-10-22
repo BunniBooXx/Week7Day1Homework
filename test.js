@@ -356,18 +356,23 @@ the list and checks that the current name is in the string passed in. The output
 let dog_string = "Hello Max, my name is Dog, and I have purple eyes!"
 let dog_names = ["Max","HAS","PuRple","dog"]
 let dog_words= dog_string.spilt(" ") 
-let dog_names_2= dog_names.toUpperCase()
 
 function findWords(){
-  if (dog_words == dog_names_2){
-    return console.log("Matched dog_name")
-}
+    for (i in dog_names){
+        dog_names([i]).toUpperCase
+    } 
+    for (i in dog_words){
+        dog_words([i].toUpperCase)
+    }
+  if ( i in dog_words == i in dog_names_2){
+     console.log("Matched dog_name")
+    }
 else { 
-    return console.log("No Matches")
+     console.log("No Matches")
 }
 }
 
-console.log(findWords(dog_words))
+console.log(findWords(dog_words)) 
 
 
 
@@ -383,20 +388,53 @@ console.log(findWords(dog_words))
 and replaces it with the string "even index" */
 
 
-given_arr == ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
-output_arr==[]
+Given_arr = ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
+Output_arr = []
 
 function replaceEvens(arr){
-    if ( i in given_arr == (n % 2== 0 )){
-         return given_arr.push("even index")
-    }
-    else {
-        given_arr.pop()
-
-    }
+    if ( i in Given_arr == (i % 2== 0 )){
+        Given_arr.splice("even index").join(Output_arr)
+    }   
+    
     
 }
-console.log(replaceEvens(give_))
+console.log(replaceEvens(Output_arr))
 //Expected output
 //Given arr == ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
 //Output arr == ["even index","Baseball","even index","Goku","even index","Rodger"]
+
+
+
+
+
+
+
+
+
+
+function excludingVatPrice(price){
+    if (price = parseInt(price)){
+        sum = price *15;
+        sum2= sum / 100 ;
+        sum3 = price + sum2; 
+        sum4=Math.round(sum3 * 100) / 100;
+        return sum4
+        }
+    if (price == null){ 
+        return -1;
+    }
+    else {
+        return 0;
+    }
+    return 0;
+  }
+
+
+
+
+  if (index %2 === 1){
+    given_arr.push(output_arr)
+    output_arr.push(given_arr)
+    console.log(given_arr)
+
+ }
